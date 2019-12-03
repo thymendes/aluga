@@ -19,8 +19,8 @@
       <div id="tabs">
       <q-tabs align="left q-ml-lg">
         <q-route-tab to="/vender" label="Vender" />
-        <q-route-tab to="/page2" label="Cadastro" />
-        <q-route-tab to="/page3" label="Login" />
+        <q-route-tab to="/cadastre" label="Cadastro" />
+        <q-route-tab to="/login" label="Login" />
       </q-tabs>
       </div>
     </q-header>
@@ -31,7 +31,7 @@
       >
         <q-scroll-area style="height: calc(100% - 221px); margin-top: 221px; border-right: 1px solid #ddd">
           <q-list padding>
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple to="login">
               <q-item-section avatar>
                 <q-icon name="inbox" />
               </q-item-section>
