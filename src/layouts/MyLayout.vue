@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHr lpR fFf">
+  <q-layout view="hhr lpR fff">
 
     <q-header class="q-header" height-hint="98">
       <q-toolbar class="bg-primary text-teal">
@@ -25,19 +25,19 @@
       </div>
     </q-header>
     <!-- drawer -->
-     <q-drawer show-if-above v-model="right" side="right"
+     <q-drawer show-if-above v-model="right" side="right" behavior="mobile"
         :width="200"
         :breakpoint="400"
       >
         <q-scroll-area style="height: calc(100% - 221px); margin-top: 221px; border-right: 1px solid #ddd">
           <q-list padding>
-            <q-item clickable v-ripple to="login">
+            <q-item clickable v-ripple to="home">
               <q-item-section avatar>
                 <q-icon name="inbox" />
               </q-item-section>
 
               <q-item-section>
-                Login
+                Home
               </q-item-section>
             </q-item>
 

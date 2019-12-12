@@ -14,46 +14,33 @@
         height="300px"
         class="bg-primary text-teal shadow-1 rounded-borders"
       >
-        <q-carousel-slide name="style" class="column no-wrap flex-center">
-          <q-icon name="style" size="56px" />
-          <div class="q-mt-md text-center">
-            {{ lorem }}
-          </div>
-        </q-carousel-slide>
-        <q-carousel-slide name="tv" class="column no-wrap flex-center">
-          <q-icon name="live_tv" size="56px" />
-          <div class="q-mt-md text-center">
-            {{ lorem }}
-          </div>
-        </q-carousel-slide>
         <q-carousel-slide name="layers" class="column no-wrap flex-center">
-          <q-icon name="layers" size="56px" />
+          <q-icon name="search" size="56px" />
           <div class="q-mt-md text-center">
-            {{ lorem }}
+            {{ alugue }}
           </div>
         </q-carousel-slide>
         <q-carousel-slide name="map" class="column no-wrap flex-center">
-          <q-icon name="terrain" size="56px" />
+          <q-icon name="attach_money" size="56px" />
           <div class="q-mt-md text-center">
-            {{ lorem }}
+            {{ venda }}
           </div>
         </q-carousel-slide>
       </q-carousel>
-      <div class="row" style="max-width: 700px">
-        <!--card-->
-        <div class="col 6 q-pa-md">
+         <!--card-->
+      <div class="row fit row wrap justify-center items-start content-start">
+        <div class="col-5 col-md-3 q-ma-sm">
           <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/parallax2.jpg">
+          <q-img
+          :src="require('assets/iphone.png')"
+          :ratio="1"
+        />
 
           <q-list>
-            <q-item clickable>
-              <q-item-section avatar>
-                <q-icon color="red" name="local_gas_station" />
-              </q-item-section>
-
+            <q-item clickable to="produto">
               <q-item-section>
-                <q-item-label>Gas Station</q-item-label>
-                <q-item-label caption>Fill your gas tank.</q-item-label>
+                <q-item-label>iPhone 8</q-item-label>
+                <q-item-label caption>R$150</q-item-label>
               </q-item-section>
             </q-item>
           </q-list>
@@ -61,104 +48,157 @@
         </div>
         <!-- cards -->
         <!--card-->
-        <div class="col 6 q-pa-md">
+        <div class="col-5 col-md-3 q-ma-sm">
           <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/parallax2.jpg">
+          <q-img
+          :src="require('assets/mala.jpg')"
+          :ratio="1"
+        />
 
           <q-list>
             <q-item clickable>
-              <q-item-section avatar>
-                <q-icon color="red" name="local_gas_station" />
-              </q-item-section>
-
               <q-item-section>
-                <q-item-label>Raquete de tênis</q-item-label>
-                <q-item-label caption >R$45,00 ao dia</q-item-label>
+                <q-item-label>Mala</q-item-label>
+                <q-item-label caption >R$200</q-item-label>
               </q-item-section>
             </q-item>
           </q-list>
         </q-card>
         </div>
-      </div>
-      <div class="row" style="max-width: 700px">
+        <!-- card -->
         <!--card-->
-        <div class="col 6 q-pa-md">
+        <div class="col-5 col-md-3 q-ma-sm">
           <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/parallax2.jpg">
+         <q-img
+          :src="require('assets/watch.jpg')"
+          :ratio="1"
+        />
 
           <q-list>
             <q-item clickable>
-              <q-item-section avatar>
-                <q-icon color="red" name="local_gas_station" />
-              </q-item-section>
-
               <q-item-section>
-                <q-item-label>Gas Station</q-item-label>
-                <q-item-label caption>Fill your gas tank.</q-item-label>
+                <q-item-label>Watch Samsung</q-item-label>
+                <q-item-label caption >R$80</q-item-label>
               </q-item-section>
             </q-item>
           </q-list>
         </q-card>
         </div>
+        <!-- card -->
         <!--card-->
-        <div class="col 6 q-pa-md">
+        <div class="col-5 col-md-3 q-ma-sm">
           <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/parallax2.jpg">
+         <q-img
+          :src="require('assets/vestido.jpg')"
+          :ratio="1"
+        />
 
           <q-list>
             <q-item clickable>
-              <q-item-section avatar>
-                <q-icon color="red" name="local_gas_station" />
-              </q-item-section>
-
               <q-item-section>
-                <q-item-label>Raquete de tênis</q-item-label>
-                <q-item-label caption >R$45,00 ao dia</q-item-label>
+                <q-item-label>Vestido de Casamento</q-item-label>
+                <q-item-label caption >R$300</q-item-label>
               </q-item-section>
             </q-item>
           </q-list>
         </q-card>
         </div>
-      </div>
-      <div class="row" style="max-width: 700px">
+        <!-- card -->
         <!--card-->
-        <div class="col 6 q-pa-md">
+        <div class="col-5 col-md-3 q-ma-sm">
           <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/parallax2.jpg">
+         <q-img
+          :src="require('assets/tv.jpg')"
+          :ratio="1"
+        />
 
           <q-list>
             <q-item clickable>
-              <q-item-section avatar>
-                <q-icon color="red" name="local_gas_station" />
-              </q-item-section>
-
               <q-item-section>
-                <q-item-label>Gas Station</q-item-label>
-                <q-item-label caption>Fill your gas tank.</q-item-label>
+                <q-item-label>TV 55</q-item-label>
+                <q-item-label caption >R$200</q-item-label>
               </q-item-section>
             </q-item>
           </q-list>
         </q-card>
         </div>
+        <!-- card -->
         <!--card-->
-        <div class="col 6 q-pa-md">
+        <div class="col-5 col-md-3 q-ma-sm">
           <q-card class="my-card">
-          <img src="https://cdn.quasar.dev/img/parallax2.jpg">
+         <q-img
+          :src="require('assets/vara.jpg')"
+          :ratio="1"
+        />
 
           <q-list>
             <q-item clickable>
-              <q-item-section avatar>
-                <q-icon color="red" name="local_gas_station" />
-              </q-item-section>
-
               <q-item-section>
-                <q-item-label>Raquete de tênis</q-item-label>
-                <q-item-label caption >R$45,00 ao dia</q-item-label>
+                <q-item-label>Vara de Pesca</q-item-label>
+                <q-item-label caption >R$100</q-item-label>
               </q-item-section>
             </q-item>
           </q-list>
         </q-card>
         </div>
+        <!-- card -->
+        <!--card-->
+        <div class="col-5 col-md-3 q-ma-sm">
+          <q-card class="my-card">
+         <q-img
+          :src="require('assets/cortador.jpg')"
+          :ratio="1"
+        />
+
+          <q-list>
+            <q-item clickable>
+              <q-item-section>
+                <q-item-label>Cortador de Grama</q-item-label>
+                <q-item-label caption >R$130</q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
+        </q-card>
+        </div>
+        <!-- card -->
+        <!--card-->
+        <div class="col-5 col-md-3 q-ma-sm">
+          <q-card class="my-card">
+         <q-img
+          :src="require('assets/casaco.jpg')"
+          :ratio="1"
+        />
+
+          <q-list>
+            <q-item clickable>
+              <q-item-section>
+                <q-item-label>Casaco de Frio </q-item-label>
+                <q-item-label caption >R$110</q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
+        </q-card>
+        </div>
+        <!-- card -->
+        <!--card-->
+        <div class="col-5 col-md-3 q-ma-sm">
+          <q-card class="my-card">
+         <q-img
+          :src="require('assets/churrasqueira.jpg')"
+          :ratio="1"
+        />
+
+          <q-list>
+            <q-item clickable>
+              <q-item-section>
+                <q-item-label>Churrasqueira</q-item-label>
+                <q-item-label caption >R$80</q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
+        </q-card>
+        </div>
+        <!-- card -->
       </div>
       </q-page>
 </template>
@@ -168,7 +208,8 @@ export default {
   data () {
     return {
       slide: 'style',
-      lorem: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem totam, architecto cupiditate officia rerum, error dignissimos praesentium libero ab nemo.'
+      alugue: 'Alugue o que você precisa de pessoas perto de você ao invés de comprar.',
+      venda: 'Ganhe dinheiro alugando objetos que você não usa mais.'
     }
   }
 }

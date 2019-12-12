@@ -1,9 +1,9 @@
 <template>
   <q-page padding class="back">
-    <div class="row">
-      <h5 class="col-7 q-mb-xl text-bold">Cadastre-se,</h5>
+    <div class="row q-ma-md">
+      <h5 class="col-7 q-mb-md text-bold">Cadastre-se,</h5>
     </div>
-     <q-form class="row">
+     <q-form class="row q-ma-md">
         <q-input class="col-12" v-model="text" filled float-label label="Nome" type="text" ></q-input>
         <q-input class="col-12 q-mt-md" v-model="email" filled float-label label="E-mail" type="email" ></q-input>
         <q-input class="col-12 q-mt-md" v-model="password" float-label label="Senha" filled :type="isPwd ? 'password' : 'text'">

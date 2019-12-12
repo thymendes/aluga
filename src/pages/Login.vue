@@ -1,11 +1,11 @@
 <template>
   <q-page padding class="back">
-    <div class="row">
+    <div class="row q-ma-md">
       <h5 class="col-7 q-mb-xs text-bold">Bem Vindo,</h5>
-      <q-btn class="col-5" flat to="cadastre-se" color="secondary" label="Cadastre-se" />
+      <q-btn class="col-5" flat to="cadastre" color="secondary" label="Cadastre-se" />
       <h8 class="col-7 q-mb-xl">Faça login para continuar</h8>
     </div>
-     <q-form class="row">
+     <q-form class="row q-ma-md">
         <q-input class="col-12" v-model="email" filled float-label label="E-mail" type="email" ></q-input>
         <q-input class="col-12 q-mt-md" v-model="password" float-label label="Senha" filled :type="isPwd ? 'password' : 'text'">
           <template v-slot:append>

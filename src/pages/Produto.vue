@@ -6,11 +6,10 @@
           :ratio="1"
         />
   </div>
-  <div class="row q-ma-md">
-    <h4 style="margin-top:5px">Iphone 8</h4>
-  </div>
-  <div class="row q-ma-md justify-evenly">
-    <q-select outlined v-model="date">
+  <div class="column q-ma-md justify-evenly">
+    <h4>Iphone 8</h4>
+      <p class="text-h6 q-mt-md text-weight-bold">Selecione as datas</p>
+    <q-select class="q-mb-md" outlined v-model="date">
         <template v-slot:prepend>
           <q-icon name="event" />
         </template>
@@ -21,16 +20,14 @@
         </template>
       </q-select>
   </div>
-  <div class="row q-ma-md ">
-    <h4>Detalhes do Produto</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare auctor magna, sollicitudin posuere urna sagittis et. Curabitur laoreet metus ex, sed interdum lectus porttitor sed. </p>
-      <h4>Selecione o local para retirada</h4>
-  </div>
-  <div class="column q-ma-md">
-      <q-radio keep-color v-model="color" val="teal" label="Riomar Shopping" color="teal" />
+  <div class="column q-ma-md ">
+    <p class="text-h6 q-mt-md text-weight-bold">Detalhes do Produto</p>
+      <p>iPhone 8, 64 GB, camera de 12MP</p>
+      <p class="text-h6 q-mt-md text-weight-bold">Selecione o local para retirada</p>
+       <q-radio keep-color v-model="color" val="teal" label="Riomar Shopping" color="teal" />
       <q-radio keep-color v-model="color" val="yellow" label="Shopping Tacaruna" color="teal" />
-  </div>
-    <q-separator color="teal" inset />
+      <q-separator color="teal" inset />
+      </div>
   <div class="row q-ma-lg">
       <div class="col-6">
         <p class="text-weight-light" >preço por dia</p>
@@ -49,8 +46,8 @@ export default {
   // name: 'PageName',
   data () {
     return {
-      date: 'Retirada',
-      devolucao: 'Devolução',
+      date: '20/12/2019',
+      devolucao: '22/12/2019',
       color: 'teal'
     }
   }
