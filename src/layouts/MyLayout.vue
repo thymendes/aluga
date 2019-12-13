@@ -53,21 +53,21 @@
 
             <q-item clickable v-ripple>
               <q-item-section avatar>
-                <q-icon name="send" />
+                <q-icon name="alarm" />
               </q-item-section>
 
               <q-item-section>
-                Sobre
+                Histórico
               </q-item-section>
             </q-item>
 
             <q-item clickable v-ripple>
               <q-item-section avatar>
-                <q-icon name="drafts" />
+                <q-icon name="build" />
               </q-item-section>
 
               <q-item-section>
-                Contato
+                Configurações
               </q-item-section>
             </q-item>
           </q-list>
@@ -138,7 +138,9 @@ export default {
     return {
       right: false
     }
+  },
+  beforeMount () {
+    this.$router.push('home')
   }
-
 }
 </script>
